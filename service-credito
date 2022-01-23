@@ -1,0 +1,11 @@
+server:
+  port: 8081
+  
+spring:
+  data:
+    mongodb:
+      uri: mongodb://localhost:27017/banca_app
+      
+eureka:
+  client:
+    serviceUrl.defaultZone: http://localhost:8761/eureka
