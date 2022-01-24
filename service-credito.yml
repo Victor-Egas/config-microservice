@@ -9,3 +9,6 @@ spring:
 eureka:
   client:
     serviceUrl.defaultZone: http://localhost:8761/eureka
+    
+eureka.server:
+  peer-node-read-timeout-ms : 3000    
