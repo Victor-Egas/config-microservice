@@ -18,7 +18,7 @@ spring:
         predicates:
           - Path=/api/v1/customers/**
         filters:
-          - StripPrefix=3     
+          - StripPrefix=3
       - id: service-cuenta-bancaria
         uri: lb://service-cuenta-bancaria
         predicates:
@@ -30,5 +30,5 @@ spring:
         predicates:
           - path=/api/v1/credito/**
         filters:
-          - StripPrefix=3    
+          - StripPrefix=3
    
