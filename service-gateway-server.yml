@@ -19,10 +19,16 @@ spring:
           - Path=/api/v1/customers/**
         filters:
           - StripPrefix=3     
-    #  - id: service-customer
-     #   uri: lb://service-customer
-      #  predicates:
-       #   - path=/api/v1/customers/**
-        #filters:
-         # - StripPrefix=2
+      - id: service-cuenta-bancaria
+        uri: lb://service-cuenta-bancaria
+        predicates:
+          - path=/api/v1/cuentaBancaria/**
+        filters:
+          - StripPrefix=3
+      - id: service-credito
+        uri: lb://service-credito
+        predicates:
+          - path=/api/v1/credito/**
+        filters:
+          - StripPrefix=3    
    
