@@ -22,13 +22,13 @@ spring:
       - id: service-cuenta-bancaria
         uri: lb://service-cuenta-bancaria
         predicates:
-          - path=/api/v1/cuentaBancaria/**
+          - Path=/api/v1/cuentaBancaria/**
         filters:
           - StripPrefix=3
       - id: service-credito
         uri: lb://service-credito
         predicates:
-          - path=/api/v1/credito/**
+          - Path=/api/v1/credito/**
         filters:
           - StripPrefix=3
    
