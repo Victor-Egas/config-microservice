@@ -7,7 +7,7 @@ spring:
       uri: mongodb://localhost:27017/banca_app
       
 config:
-  base.endpoint: http://localhost:8082/api/v1/customers
+  base.endpoint: http://localhost:8082
   
 eureka:
   client:
